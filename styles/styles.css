@@ -1,0 +1,69 @@
+svg {
+  outline: 1px solid #000;
+  max-width: 50vw;
+}
+
+.stampede {
+  animation: stampede 20s;
+}
+
+@keyframes stampede {
+  100% {
+    transform: translate(200px, 0);
+  }
+}
+
+.clouds {
+  animation: clouds 30s;
+}
+
+@keyframes clouds {
+  100% {
+    transform: translate(-200px, 0);
+  }
+}
+
+.cloud-1 {
+  box-shadow: 1px 1px 2px black;
+  animation: cloud-1 30s;
+}
+
+@keyframes cloud-1 {
+  0% {
+    fill: url(#cloud-1-1);
+    transition: 10s;
+  }
+  50% {
+    fill: url(#cloud-1-2);
+    transition: 10s;
+  }
+  80% {
+    fill: url(#cloud-1-3);
+    transition: 10s;
+  }
+}
+
+.cloud-2 {
+  box-shadow: 1px 1px 2px black;
+  animation: cloud-2 30s;
+}
+
+@keyframes cloud-2 {
+  0% {
+    fill: url(#cloud-2-1);
+    transition: 10s;
+  }
+  50% {
+    fill: url(#cloud-2-2);
+    transition: 10s;
+  }
+  80% {
+    fill: url(#cloud-2-3);
+    transition: 10s;
+  }
+}
+
+/* <stop offset="10%" stop-color="hsla(0, 0%, 100%, 1)" />
+<stop offset="15% 45%" stop-color="hsla(59, 100%, 57%, 1)" />
+<stop offset="85%" stop-color="hsla(18, 98%, 51%, 1)" />
+<stop offset="120%" stop-color="hsla(0, 90%, 37%, 1)" /> */
